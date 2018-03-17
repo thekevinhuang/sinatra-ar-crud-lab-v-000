@@ -3,7 +3,7 @@
 <h2>Current Blog Post Name: <%=@post.name%></h2><br>
 <%=@post.content%><br>
 
-<form method="POST" action="/posts/<%=@id%>">
+<form method="POST" action="/posts/<%=@post.id%>">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <label>Blog Post Name: <input type="text" name="name"></label>
   <label>Blog Post Content: <input type="text" name="content"></label>
